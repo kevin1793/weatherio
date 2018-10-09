@@ -1,0 +1,54 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WeatherIO</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/js.js"></script>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            body{
+                margin: 0 auto;
+            }
+            .content_wrapper{
+                background-image: url('images/default_bg.jpg');
+                background-size: cover;
+                background-position: center;
+                max-height: 1000px;
+                height: 100%;
+                display: none;
+                position: relative;
+            }
+            .content_container{
+                max-width: 400px;
+                background: rgb(255, 255, 255, .5);
+                display: none;
+                margin: 0 auto;
+                vertical-align: middle;
+                position: absolute;
+                top: 40%;
+                left: 20%;
+                right: 20%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content_wrapper">
+            <div class="content_container">
+                <p>
+                    Welcome
+                </p>
+                <button onclick="getWeather()">
+                    Get weather
+                </button>
+                <p class="weather">
+                    ???
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
